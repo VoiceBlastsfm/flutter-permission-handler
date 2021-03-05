@@ -53,8 +53,8 @@ extension PermissionActions on Permission {
 
 /// Shortcuts for checking the [status] of a [Permission].
 extension PermissionCheckShortcuts on Permission {
-  /// If this permission was never requested before. 
-
+  /// If this permission was never requested before.  
+  Future<bool> get isUndetermined => status.isUndetermined;
   /// If the user granted this permission.
   Future<bool> get isGranted => status.isGranted;
 
