@@ -1,5 +1,4 @@
-import 'dart:io';
-import 'dart:async';
+import 'dart:io'; 
 
 import 'package:permission_handler_platform_interface/permission_handler_platform_interface.dart';
 
@@ -54,8 +53,7 @@ extension PermissionActions on Permission {
 
 /// Shortcuts for checking the [status] of a [Permission].
 extension PermissionCheckShortcuts on Permission {
-  /// If this permission was never requested before.
-  Future<bool> get isUndetermined => status.isUndetermined;
+  /// If this permission was never requested before. 
 
   /// If the user granted this permission.
   Future<bool> get isGranted => status.isGranted;
